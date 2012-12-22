@@ -1,5 +1,5 @@
 Name: evhz
-Version: 2006
+Version: 2012
 Release: alt1
 
 Summary: Measure mouse polling rate
@@ -20,7 +20,7 @@ when checking that your customised polling settings have been applied.
 
 You will have root permissions to /dev/input/event*
 
-Full credit goes to the original author, Alan Kivlin.
+Inspired by code written by Alan Kivlin.
 
 %prep
 %setup
@@ -35,5 +35,8 @@ install %name -D %buildroot%_sbindir/%name
 %_sbindir/%name
 
 %changelog
+* Sat Dec 22 2012 Vitaly Lipatov <lav@altlinux.ru> 2012-alt1
+- full rewrite original code and set appropriate license
+
 * Fri Apr 06 2012 Vitaly Lipatov <lav@altlinux.ru> 2006-alt1
 - initial build for ALT Linux Sisyphus
